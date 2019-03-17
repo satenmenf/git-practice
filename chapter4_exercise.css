@@ -1,0 +1,191 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+
+header {
+	width: 100%;
+	height: 72px;
+	padding: 20px 0;
+	margin: 0 auto;
+	text-align: center;
+}
+
+header .headline {
+	font-size: 32px;
+}
+
+nav {
+	border-style: solid;
+	border-width: 1px 0;
+	border-color: #aaa;
+}
+.nav-list {
+	text-align: center;
+	padding: 15px;
+	margin: 0 auto;
+}
+
+.nav-list-item {
+	list-style: none;
+	display: inline-block; 
+	/* listはブロック要素がデフォルト＝縦に並ぶ → 解除するために、インラインブロックに変える */
+	margin: 0 20px;
+}
+
+/* ここからメインページ */
+.main {
+	width: 100%;
+}
+
+.content {
+	width: 800px;
+	margin: 50px auto;
+	padding: 0;
+	font-size: 0;
+	background-color: blue;
+}
+
+.box1 {
+	display: inline-block;
+	margin: 0;
+    width: 200px;
+    height: 200px;
+    background-color: #e6ffe9;
+}
+
+.box2 {
+	display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: #cbffd3;
+    margin: 0;
+}
+
+.box3 {
+	display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color:#aeffbd;
+    margin: 0;
+}
+
+.box4 {
+	display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color:#93ffab;
+    margin: 0;
+}
+
+.box5 {
+	display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color:#f3ffd8;
+    margin: 0;
+
+}
+
+.box6 {
+	display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color:#edffbe;
+    margin: 0;
+
+}
+
+.box7 {
+	display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color:#e9ffa5;
+    margin: 0;
+
+}
+
+.box8 {
+	display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color:#e4ff8d;
+    margin: 0;
+
+}
+
+.box9 {
+	display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color:#d9e5ff;
+    margin: 0;
+
+}
+
+.box10 {
+	display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color:#bad3ff;
+    margin: 0;
+
+}
+
+.box11 {
+	display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color:#a4c6ff;
+    margin: 0;
+
+}
+
+.box12 {
+	display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color:#8eb8ff;
+    margin: 0;
+
+}
+
+.box13 {
+	display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color:#93ffab;
+    margin: 0;
+
+}
+
+.box14 {
+	display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color:#93ffab;
+    margin: 0;
+
+}
+/* メインページここまで */
+
+footer {
+	width: 100%;
+	height: 120px;
+	text-align: center;
+	margin: 0;
+	padding: 50px 0 ;
+	background-color: #848282;
+}
+
+.footer-text {
+	color: #fff;
+}
