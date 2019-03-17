@@ -4,17 +4,20 @@
 	box-sizing: border-box;
 }
 
+/*　width margin:0;　の設定は不要。　
+	widthを指定しなければ、widthは幅いっぱいに広がる
+	中央揃えにする必要はないので、margin0は不要 */
 .box1{
-	width: 100%;
+	/*width: 100%;*/
 	height: 200px;
 	background-image: url(chapter5_exercise_img/box1.jpg);
 	background-size: cover;
 	background-position: center;
-	margin: 0;
+	/*margin: 0;*/
 }
 
 .box2{
-	width: 100%;
+	/*width: 100%;*/
 	height: 200px;
 	background-image: url(chapter5_exercise_img/box2.jpg);
 	background-size: cover;
@@ -22,7 +25,7 @@
 }
 
 .box3{
-	width: 100%;
+	/*width: 100%;*/
 	height: 200px;
 	background-image: url(chapter5_exercise_img/box3.jpg);
 	background-size: cover;
@@ -30,7 +33,7 @@
 }
 
 .box4{
-	width: 100%;
+	/*width: 100%;*/
 	height: 200px;
 	background-image: url(chapter5_exercise_img/box4.jpg);
 	background-size: cover;
