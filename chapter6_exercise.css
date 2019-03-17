@@ -2,15 +2,15 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	color: #6c6b6b;
+	/*color: #6c6b6b; 指定しない*/
 }
 
-a {
+/*a {
 	color: #6c6b6b;
-}
+}　指定しない　*/
 
 /* header */
-.header-visual {
+.main-visual { /* 名前変更 header-visual main-visual */
 	width: 100%;
 	height: 400px;
 	background-image: url(chapter6_exercise_img/mv.jpg);
@@ -18,18 +18,56 @@ a {
 	background-position: bottom;
 }
 .headline {
-	height: 0.6;
 	padding: 20px;
-	font-size: 20px;
+	/*height: 0.6;*/
+	/*font-size: 20px;*/
 }
 
 /* main */
-.main-box {
-	width: 840px;
-	margin: 20px auto;
-	padding-bottom: 30px; /* herderとの距離が50 かつ　main-item間の距離が30 といことで計算 */
+/* main　にcssを指定する */
+main {
+	width: 840px; /* main-box の内容 */
+	margin: 50px auto;  /* main-box の内容 // 50pxで余白を指定 */
 }
-.main-item {
-	padding: 30px 0;
-    border-bottom: 1px solid #ccc;
+/*. main-box の内容はmainに書いた
+main-box {
+	width: 840px;　→main
+	margin: 20px auto;　→main
+	padding-bottom: 30px;  これはserviceに書き換え
+	herderとの距離が50 かつ　main-item間の距離が30 といことで計算したが違った
+	padddingはbottomにしか付いていないので、padding-bottomで指定してやれば良い 
+} */
+/* main main-box 変更ここまで */
+/* main-item 消去
+.main-item  { 
+	/*padding: 30px 0; 
+    /*border-bottom: 1px solid #ccc; 
+}　*/
+
+.service1 {
+	margin-bottom: 30px;
+	border-bottom: 1px solid #d1d1d1;
+	padding-bottom: 30px;
 }
+
+.service2 {
+	margin-bottom: 30px;
+	border-bottom: 1px solid #d1d1d1;
+	padding-bottom: 30px;
+}
+
+.service3 {
+	margin-bottom: 30px;
+	border-bottom: 1px solid #d1d1d1;
+	padding-bottom: 30px;
+}
+
+.service4 {
+	margin-bottom: 30px;
+	border-bottom: 1px solid #d1d1d1;
+	padding-bottom: 30px;
+}
+
+/*　
+Q.serviceはなぜ複数のクラスを用意したのだろう
+　*/
