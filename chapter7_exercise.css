@@ -4,40 +4,72 @@
   box-sizing: border-box;
 }
 
-.list-ul {
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* mainでwidthと中央寄せ、marginを設定する */
+main {
   width: 960px;
   margin: 50px auto;
 }
-.list:nth-child(odd)  {
-  list-style: none;
+
+.list-ul {
+  /*width: 960px;*/
+  /*margin: 50px auto;*/
+  margin-bottom: 50px;  /* bottomにmarginを設定 */
+}
+.list {
   padding: 20px;
+  list-style: none; /* まず共通のレイアウトを作る */
+}
+.list:nth-child(odd)  {
   background-color: #ccc; 
 }
+/* Q.背景色はもともと#fffなので設定しなくてOK ということ？
 .list:nth-child(even) {
-  list-style: none;
-  padding: 20px;
   background-color: #fff;
 }
+*/
 
+/* ここからbox */
+/* 親要素は必要なし boxの基本形（box）で同じ形が作れる
 .boxback {
   width: 960px;
   margin: 0 auto;
   padding-bottom: 50px;
   font-size: 0;
 }
+*/
 .box {
+  background-color: #ffd700;
   width: 30%;
   height: 200px;
-  margin: 0 5% 40px 0;
-  display: inline-block;
-  background-color: gold;
+  /*margin: 0 5% 40px 0; 別々に設定する*/
+  margin-right: 5%;
+  margin-bottom: 40px;
+  /*display: inline-block; floatを使う*/
+  float: left;
 }
-.box:nth-child(1),:nth-child(5),:nth-child(9) {
-  background-color: orange;
+/* まとめて書くとき、縦に書くと見易い　＆　擬似クラスの前にはクラス名をつける */
+/* １番目ならnthよりfirstを使う */
+/* 最後ならnthよりlastを使う */
+  .box:first-child,
+  .box:last-child,
+  .box:nth-child(5) {
+  background-color: #ff8c00;
 }
-.box:nth-child(3),:nth-child(6),:nth-child(9) {
-  margin: 0 0 40px 0;
+/* 計算式が使える。3の倍数の時は 3n と書くと良い */
+  .box:nth-child(3n) {
+  margin-right: 0;
 }
-.box:nth-child(8),:nth-child(7),:nth-child(9) {
+  /*  計算式が使える。
+      3の倍数の時は 3n と書くと良い
+      擬似クラスは複数を同時に使える
+      nth last を組み合わせることで「最後から数える（降順）」指定ができる
+      -n+3 〜３番目まで */
+  .box:nth-last-child(-n+3) {
   margin-bottom: 0;
 }
