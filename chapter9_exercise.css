@@ -1,3 +1,4 @@
+/* ９章まで完了しました */
 * {
 	margin: 0;
 	padding: 0;
@@ -44,7 +45,7 @@ main {
   background-position: bottom;
 }
 
-.step {
+.step-num {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -52,8 +53,6 @@ main {
 	color: #fff;
 	padding: 3px
 }
-
- /* 追加 */
 .title{
   margin: 15px 0 5px;
 }
