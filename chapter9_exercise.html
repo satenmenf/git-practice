@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+	<title>第８章課題</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="chapter9_exercise.css">
+</head>
+<body>
+
+  <main class="clearfix"><!-- main タグを使う mainクラスを作って指定しなくて良い clearfixの指定だけで良くなる スペルミスclerfx→clearfix -->
+    <div class="step-box"><!-- session → div -->
+     <!-- <img class="image" src="chapter8_exercise_img/flow01.png"> imgでなく　divにbackground表示させる -->
+     <div class="step-img1"></div>
+     <span class="step">step1</span> <!-- div でなく span インライン要素になっている。文字列だけで改行もしない部分の装飾をする時に良い。インラインなので -->
+     <h3 class="title">タイトルが入ります</h3> <!-- titleクラス追加 -->
+  	 <p class="text">文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。</p> <!-- textクラス追加 -->
+  	</div>
+  	<!-- Q. -->
+
+    <div class="step-box">
+     <div class="step-img2"></div>
+     <span class="step">step2</span>
+     <h3 class="title">タイトルが入ります</h3>
+  	 <p class="text">文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。</p> 
+  	</div>
+
+    <div class="step-box">
+     <div class="step-img3"></div>
+     <span class="step">step3</span>
+     <h3 class="title">タイトルが入ります</h3>
+  	 <p class="text">文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。文章が入ります。</p> 
+  	</div>
+
+  </main>
+
+</body>
+</html>
+
+  	<!-- Q.解答ではimgタグを使わず、divタグを作って背景画像を設定する方法をとっていた。なぜだろう。
+  		imgタグではダメな理由はなんだろう？　
+  		予想される不具合は？ 
+  		  画像のposition指定…今回は全身使うから気にしなくていい-->
+    <!-- 文章のみ装飾する時は　span　を使う -->
+    <!-- クラス名をつける時は、 親クラスの名前-子クラスの名前　にする慣習がある -->

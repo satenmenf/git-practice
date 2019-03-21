@@ -1,0 +1,76 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+main {
+  width: 960px;
+  margin: 50px auto;
+}
+.step-box {
+	float: left; /* 最初に持ってきた */
+	width: 300px;
+	margin: 0 30px 0 0;
+	padding: 10px; /* 追加 */
+	position: relative; /* 追加 */
+	border: 1px solid #eee;
+}
+.step-box:last-child {
+	margin: 0;
+}
+/* imgタグでなくdivで指定
+.image {
+  width: 280px;
+  margin: 10px;
+  float: left;
+  position: relative;
+}
+*/
+/*　追加　imgのURLは毎回指定する　*/
+.step-img1 {
+  height: 150px;
+  background-image: url(chapter8_exercise_img/flow01.png);
+  background-size: cover;
+  background-position: bottom;
+}
+.step-img2 {
+  height: 150px;
+  background-image: url(chapter8_exercise_img/flow02.png);
+  background-size: cover;
+  background-position: bottom;
+}
+.step-img3 {
+  height: 150px;
+  background-image: url(chapter8_exercise_img/flow03.png);
+  background-size: cover;
+  background-position: bottom;
+}
+/* stepのアイコンは無いだろうと考え自作 */
+.step {
+	position: absolute; /* 最初に持ってきた */
+	top: 0;
+	left: 0; /* 追加 */
+	background-color: #FF9A4B;
+	color: #fff;
+	/*text-align: center;  spanにすれば不要*/
+	/*float: left;*/
+	padding: 3px
+}
+
+ /* 追加 */
+.title{
+  margin: 15px 0 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .XX{
+    
+  }
+}
